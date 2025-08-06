@@ -48,13 +48,9 @@ Achieves:
 ```
 brain_tumor_project/
 │
-├── classification/
-│ ├── train_classifier.py
-│ └── resnet18_model.keras
+├── best_model.keras
 │
-├── segmentation/
-│ ├── train_unet.py
-│ └── unet_segmentation_model.h5
+├── brain_tumor_segmentation_model.keras
 │
 ├── deployment/
 │ ├── app.py
