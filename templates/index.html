@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Tumor Classification & Segmentation 🧠</h1>
+
+        
+        <form method="post" action="/process" enctype="multipart/form-data">
+            <input type="file" name="image"><br><br>
+            <button type="submit" name="action" value="classify">Classification</button>
+            <button type="submit" name="action" value="segment">Segmentation</button>
+        </form>
+
+        
+        {% if result %}
+            <div class="result-box">
+                <h2>{{ result }}</h2>
+            </div>
+        {% endif %}
+
+        <!-- عرض الصورة المرفوعة -->
+        {% if image_path %}
+            <h3>Uploaded Image:</h3>
+            <img src="{{ url_for('static', filename=image_path) }}" width="300">
+        {% endif %}
+
+        <!-- عرض صورة التقنيع -->
+        {% if segmented_image %}
+            <h3>Segmented Mask:</h3>
+            <img src="{{ url_for('static', filename=segmented_image) }}" width="400">
+        {% endif %}
+
+        <!-- استخدام الصورة المرفوعة بدون رفع جديد -->
+        {% if image_path %}
+            <form method="post" action="/process">
+                <button type="submit" name="action" value="classify">Re-Classify</button>
+                <button type="submit" name="action" value="segment">Segment Again</button>
+            </form>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+
+
