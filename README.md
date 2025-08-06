@@ -45,7 +45,7 @@ Achieves:
 ---
 
 ## 🧱 Project Structure
-
+```
 brain_tumor_project/
 │
 ├── classification/
@@ -70,7 +70,7 @@ brain_tumor_project/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-
+```
 
 ---
 
