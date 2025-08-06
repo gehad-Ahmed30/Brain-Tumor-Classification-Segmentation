@@ -75,7 +75,7 @@ brain_tumor_project/
 ### ✅ ResNet Classification
 
 - **Test Accuracy**: 92.16%
-- **Architecture**: ResNet-18 (Transfer Learning)
+- **Architecture**: ResNet (Transfer Learning)
 - **Training**: 40 epochs with early stopping
 - **Loss**: Categorical cross-entropy
 
@@ -94,5 +94,8 @@ Val Loss: 0.25
 - **Dice Coefficient (Val)**: **0.8263**
 - **IoU Score (Val)**: ~0.70
 - **Loss Function**: Negative Dice Loss
+
+### 📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
 
