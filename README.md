@@ -11,8 +11,8 @@ This project delivers an end-to-end pipeline that performs:
 - **Segmentation**: Pixel-wise tumor detection using U-Net
 
 Achieves:
-- ✅ **92.16% classification accuracy**
-- ✅ **99.63% segmentation accuracy**
+- **92.16% classification accuracy**
+- **99.63% segmentation accuracy**
 
 ---
 
